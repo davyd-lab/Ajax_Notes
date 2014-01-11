@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+	background-color: #BBA23E;
+	color: #202D60;
+	padding-left: 15px;
+}
+
+.postBox {
+	float: left;
+	width: 200px;
+	padding: 10px;
+	margin: 10px;
+	font-family:"Reenie Beanie",arial,sans-serif; 
+	color:#000;  
+	background:#FFFF00;   
+	/* Firefox */  
+	-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);  
+	/* Safari+Chrome */  
+	-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+	/* Opera */  
+	box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+.postBox h1{
+	margin:0;
+
+}
+
+.right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+	background-image: url("bg.jpg");
+}
+
+.container {
+background-color: #BBA23E;
+color:#202D60;
+padding-left: 15px;
+}
+
+.sig {
+	float: right;
+}
+
+.pointer {
+	cursor:pointer;
+}

@@ -1,0 +1,53 @@
+<?php
+require("connection.php");
+session_start(); 
+
+?>
+
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>Add notes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+	<h1> My Posts</h1>
+
+<?php
+
+  //get all posts and time from db
+  $query = "SELECT post, time FROM posts";
+  var_dump($query);
+  die;
+
+  $posts = fetch_all($query);
+  
+
+	foreach ($posts as $post){
+
+		// var_dump($post);
+
+		echo $post['post'];
+		echo $post['time'];
+
+		echo "<div class='postBox'>" . $post['post'] . "<p class='time'>" . $post['time'] . "</p></div>";
+	}
+
+
+?>
+
+  <p>Add a note:</p>
+
+  <form action="process.php" method="POST">
+  <textarea name="note"></textarea>
+  <input type="submit" value="post it">
+  </form>
+
+
+  </body>
+
+</html>
